@@ -4,7 +4,7 @@ function Def (html) {}
 
 module.exports = Def
 
-function Def (html) {
+function home (html) {
   return (
       <html>
           <head>
