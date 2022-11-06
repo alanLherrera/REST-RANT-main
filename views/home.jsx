@@ -1,13 +1,13 @@
 const React = require('react')
-const Def = require('./places/default')
+const Def = require('./default')
 
 function home () {
   return (
-    <def>
+    <Def>
       <main>
         <h1>HOME</h1>
         <div>
-          <img src="images/eggs.jpeg" />
+          <img src="images/eggs.jpeg" alt="picture of eggs" width="150" />
         </div>
         <a href="/places">
         <button className="btn-primary">Places Page</button>
@@ -15,7 +15,7 @@ function home () {
 
 
       </main>
-    </def>
+    </Def>
   )
 }
 
