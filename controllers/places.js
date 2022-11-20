@@ -13,6 +13,10 @@ router.get('/', (req, res) => {
 })
 
 router.post('/', (req, res) => {
+  if (!req.body.pic) {
+    //the default image if it doesn't load one
+    req.body.pic = './images/batman.jpeg'
+  }
   db.Place.create(req.body)
   .then(() => {
       res.redirect('/places')
