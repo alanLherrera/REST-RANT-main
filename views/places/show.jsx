@@ -2,6 +2,11 @@ const React = require('react')
 const Def = require('../default')
 
 function show (data) {
+  let comments = (
+    <h3 classname ="inactive">
+      No comments Yet!
+    </h3>
+  )
     return (
       <Def>
       <main>
@@ -26,6 +31,7 @@ function show (data) {
             ...
         </div>
       </div>
+      
       </main>
     </Def>
     
