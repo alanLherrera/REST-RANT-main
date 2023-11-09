@@ -1,20 +1,33 @@
+html,
+body {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100vh; /* 100% of the viewport height */
+  margin: 0;
+}
+
 h1 {
   text-align: center;
-  color: cornflowerblue;
+  color: black;
 }
 nav {
-  background-color: cornflowerblue;
-  padding: 10px;
+  background-color: #333; /* Change to your desired background color */
+  position: fixed; /* Set the navbar to a fixed position */
+  top: 0; /* Position it at the top of the viewport */
+  width: 100%; /* Make the navbar full width of the viewport */
+  z-index: 100;
 }
 
 nav ul {
   list-style-type: none;
   margin: 0;
+  padding: 230;
 }
 
 nav li {
-  display: inline;
-  margin-right: 25px;
+  display: inline; /* Display list items horizontally */
+  margin-right: 20px; /* Adjust spacing between items */
 }
 
 nav a {
@@ -23,6 +36,49 @@ nav a {
 }
 
 nav a:hover {
-  color: pink;
+  color: #ffcc00;
   text-decoration: none;
+}
+
+.container {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+
+.img {
+  display: block; /* Ensure the image behaves as a block element */
+  max-width: 100%; /* Ensure the image doesn't exceed its container's width */
+  height: auto; /* Maintain the image's aspect ratio */
+}
+
+.main-button {
+  width: 100%; /* Make the button's width match the container's width */
+  color: white;
+  background-color: black; /* Make the button background transparent */
+  border-radius: 30px;
+  cursor: pointer; /* Change cursor to a pointer on hover */
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
+
+.delete-button {
+  width: 50%;
+  height: 50px;
+  background-color: red;
+  color: white;
+  border-radius: 20px;
+}
+
+.edit-button {
+  border-radius: 20px;
+  background-color: yellow;
+  color: black;
+  width: 50%;
+  height: 50px;
 }

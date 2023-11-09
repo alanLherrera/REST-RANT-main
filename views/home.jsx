@@ -1,22 +1,20 @@
-const React = require('react')
-const Def = require('./default')
+const React = require("react");
+const Def = require("./default");
 
-function home () {
+function home() {
   return (
     <Def>
       <main>
         <h1>HOME</h1>
-        <div>
-          <img src="images/eggs.jpeg" alt="picture of eggs" width="150" />
+        <div className="container">
+          <img src="images/rest-rant.jpeg" alt="picture of eggs" />
         </div>
         <a href="/places">
-        <button className="btn-primary">Places Page</button>
+          <button className="main-button">Places Page</button>
         </a>
-
-
       </main>
     </Def>
-  )
+  );
 }
 
-module.exports = home
+module.exports = home;
